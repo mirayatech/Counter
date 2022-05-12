@@ -16,6 +16,7 @@ body {
   background: var(--body-color);
   text-align: center;
   display: flex;
+  -webkit-user-select: none;
   justify-content: center;
   align-items: center;
 }
@@ -29,8 +30,15 @@ body {
   width: 450px;
   height: 300px;
   border-radius: 7px;
+  transition: all 0.5s ease;
   background: #232749;
+  border: 3px solid #232749;
+
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+}
+
+.counter:hover {
+  border: 3px solid var(--main-color);
 }
 
 .counter label {
