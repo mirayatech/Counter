@@ -101,4 +101,70 @@ body {
   transform: rotate(180deg);
 }
 
-/*  */
+/* MEDIA QUERY */
+
+@media (max-width: 480px) {
+  .counter {
+    width: 350px;
+    height: 250px;
+  }
+  /* COUNT_LABEL */
+
+  .counter label {
+    margin-bottom: 50px;
+    color: var(--item-color);
+    font-size: calc(60 / 16 * 1rem);
+  }
+
+  /*  */
+
+  .counter__btn button {
+    padding: 8px 25px;
+    margin: 0 10px 10px 10px;
+  }
+
+  .counter__btn #decrease__btn {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  .counter__btn #reset__btn {
+    font-size: calc(16 / 16 * 1rem);
+  }
+
+  .counter__btn #increase__btn {
+    font-size: calc(19 / 16 * 1rem);
+  }
+}
+
+@media (max-width: 370px) {
+  .counter {
+    width: 300px;
+    height: 250px;
+  }
+  /* COUNT_LABEL */
+
+  .counter label {
+    margin-bottom: 50px;
+    color: var(--item-color);
+    font-size: calc(60 / 16 * 1rem);
+  }
+
+  /*  */
+
+  .counter__btn button {
+    padding: 8px 25px;
+    margin: 0 10px 10px 10px;
+  }
+
+  .counter__btn #decrease__btn {
+    font-size: calc(19 / 16 * 1rem);
+  }
+
+  .counter__btn #reset__btn {
+    font-size: calc(16 / 16 * 1rem);
+  }
+
+  .counter__btn #increase__btn {
+    font-size: calc(18 / 16 * 1rem);
+  }
+}
