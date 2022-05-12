@@ -1,0 +1,86 @@
+:root {
+  --body-color: #13162b;
+  --main-color: #5356ff;
+  --item-color: #dff6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: var(--item-color);
+  background: var(--body-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 300px;
+  border-radius: 7px;
+  background: #232749;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+}
+
+.counter label {
+  margin-bottom: 50px;
+  color: var(--item-color);
+  font-size: calc(70 / 16 * 1rem);
+}
+.counter__btn button {
+  padding: 10px 30px;
+  margin: 0 20px 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.counter__btn button i {
+  transition: all 0.7s ease;
+}
+
+.counter__btn #decrease__btn {
+  color: var(--item-color);
+  background: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  font-size: calc(20 / 16 * 1rem);
+  font-weight: 700;
+}
+
+.counter__btn #reset__btn {
+  color: var(--main-color);
+  background: none;
+  border: 2.5px solid var(--main-color);
+  border-radius: 5px;
+  font-size: calc(19 / 16 * 1rem);
+  font-weight: 700;
+}
+
+.counter__btn #increase__btn {
+  color: var(--item-color);
+  background: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  font-size: calc(19 / 16 * 1rem);
+  font-weight: 700;
+}
+
+.counter__btn #decrease__btn:hover,
+.counter__btn #increase__btn:hover {
+  background: #5656ffd5;
+}
+
+.counter__btn #reset__btn:hover i {
+  transform: rotate(180deg);
+}
