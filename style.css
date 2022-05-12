@@ -1,6 +1,7 @@
 :root {
-  --body-color: #13162b;
-  --main-color: #5356ff;
+  --body-color: #071324;
+  --extra--color: #121b29;
+  --main-color: #60f1d0;
   --item-color: #dff6ff;
 }
 
@@ -21,6 +22,8 @@ body {
   align-items: center;
 }
 
+/* COUNTER */
+
 .counter {
   margin-top: 250px;
   display: flex;
@@ -31,8 +34,8 @@ body {
   height: 300px;
   border-radius: 7px;
   transition: all 0.5s ease;
-  background: #232749;
-  border: 3px solid #232749;
+  background: #0a192f;
+  border: 3px solid #0a192f;
 
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
 }
@@ -41,11 +44,16 @@ body {
   border: 3px solid var(--main-color);
 }
 
+/* COUNT_LABEL */
+
 .counter label {
   margin-bottom: 50px;
   color: var(--item-color);
   font-size: calc(70 / 16 * 1rem);
 }
+
+/*  */
+
 .counter__btn button {
   padding: 10px 30px;
   margin: 0 20px 10px 20px;
@@ -58,7 +66,7 @@ body {
 }
 
 .counter__btn #decrease__btn {
-  color: var(--item-color);
+  color: var(--extra--color);
   background: var(--main-color);
   border: none;
   border-radius: 5px;
@@ -76,7 +84,7 @@ body {
 }
 
 .counter__btn #increase__btn {
-  color: var(--item-color);
+  color: var(--extra--color);
   background: var(--main-color);
   border: none;
   border-radius: 5px;
@@ -86,9 +94,11 @@ body {
 
 .counter__btn #decrease__btn:hover,
 .counter__btn #increase__btn:hover {
-  background: #5656ffd5;
+  background: #60f1cfd3;
 }
 
 .counter__btn #reset__btn:hover i {
   transform: rotate(180deg);
 }
+
+/*  */
