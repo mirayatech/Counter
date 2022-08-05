@@ -8,7 +8,6 @@ A counter, where you can track your counting 🔢
 
 ## How it looks 🎥
 
-**Live:** https://countercounter.netlify.app/
 
 
 
